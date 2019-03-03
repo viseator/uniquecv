@@ -2,7 +2,7 @@
 \LoadClass{article}
 
 % package name
-\ProvidesClass{uniquecv}
+\ProvidesClass{uniquecv_en}
 
 % Chinese support
 \RequirePackage{ctex}
@@ -23,10 +23,10 @@
 \pagenumbering{gobble}
 
 \setitemize[1]{
-  itemsep=0.3ex, % space between item
+  itemsep=0.2ex, % space between item
   partopsep=0.0ex, %
   parsep=\parskip,
-  topsep=0.3ex % space before text
+  topsep=0.2ex % space before text
 } 
 
 % set margin
@@ -42,8 +42,12 @@
 % do not need indent in resume
 \setlength\parindent{0pt}
 
+\renewcommand{\baselinestretch}{1.2} 
+\setmainfont{Times New Roman}
+
 % ----------------------------------------------------------------------------- %
 
+\setCJKfamilyfont{song}{Songti SC}
 % name of candidate
 \newcommand{\name}[1]{
   \centerline{\Huge{\bf{#1}}}   % in the center & Huge font size
@@ -76,13 +80,13 @@
   [\titlerule]
 
 % adjust the vertical space before and after the heading
-\titlespacing*{\section}{0cm}{*1.6}{*1.2}
+\titlespacing*{\section}{0cm}{*0}{*0.5}
 
 % similar above
 \titleformat{\subsection}
   {\normalsize\raggedright}
   {}{0em}{}
-\titlespacing*{\subsection}{0cm}{*1.6}{0.0ex}
+\titlespacing*{\subsection}{0cm}{*0.0}{0.0ex}
 
 % ----------------------------------------------------------------------------- %
 

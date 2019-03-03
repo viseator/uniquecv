@@ -1,91 +1,102 @@
 \documentclass{uniquecv}
 
-\usepackage{fontawesome}
-
 % ----------------------------------------------------------------------------- %
 
 \begin{document}
 
-\name{名字}
+\name{霍金}
 
 \medskip
 
 \basicinfo{
-  \faPhone ~ (+86) 153-0000-8888
+  \normalsize{ 
+  \faPhone ~ (+86) 158-8888-8888
   \textperiodcentered\
-  \faEnvelope ~ username@email.com
+  \faEnvelope ~ vvvvvv@gmail.com
   \textperiodcentered\
-  \faGithub ~ github.com/username
+  \faGithub ~ \href{https://github.com/viseator}{\uline{github.com/viseator}}
+  \textperiodcentered\
+  {\bf\small{技术博客}} \href{https://www.viseator.com/}{\uline{viseator.com}}
+  }
+}
+
+\basicinfo{
+  \normalsize{
+    华中科技大学
+    \textperiodcentered\
+    计算机科学与技术
+    \textperiodcentered\
+    本科
+    \textperiodcentered\
+    2020届
+  }
 }
 
 
-% ----------------------------------------------------------------------------- %
-
-\section{教育背景}
-\dateditem{\textbf{华中科技大学} \quad 软件工程 \quad 本科}{2014年 -- 2018年}
-成绩：年级前100\% \quad 英语：CET6
-
 
 % ----------------------------------------------------------------------------- %
 
-\section{专业技能}
+\section{个人简介}
 \smallskip
-C/C++、Lisp、Java、算法与数据结构、Linux、Storm、Hadoop、Spark、Flink、Hive、Hbase
 
+两年半Android开发经验，一年实习经验，有两款Google Play上架应用，在Hybrid应用方面有实践经验，对Android Framework、插件化有所了解。
+
+实习期间参与头条某业务从零开始的开发过程，对应用架构、组件化有一定认识；参与头条小程序引擎的维护、需求开发；完成配置中心Android SDK的开发与维护。
+
+原创技术博客累计访问量\texttt{13w+}；在校期间Github年均Contributions数量\texttt{600+}。
+
+Linux/MacOS日常使用与爱好者，对命令行环境、Git、Gerrit/Gitlab工作流程较为熟悉。乐于学习新技术，也忠于计算机基础知识。
 
 % ----------------------------------------------------------------------------- %
 
-\section{获奖情况}
-\datedaward{一等奖}{XYZ应用开发大赛} {2026年06月}
-\datedaward{\small{这是一个比较长长长长的奖}}{比较长的奖的比赛}{2016年04月}
-\datedaward{冠军}{武汉KK编程挑战赛} {2015年09月}
+\section{实习经历}
+\datedaward{好好好深圳研发中心}{好好好-Android} {2017年12月 -- 2018年2月}
+参与好好好好好好好好好好好好发流程，主要完成了某业务模块的需求开发。
+\datedaward{好好好武汉研发中心}{好好好-Android} {2018年4月 -- 至今}
+武汉新设立研发团队
+\begin{itemize}
+  \item 参与好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好
+  \item 参与好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好发
+  \item 参与好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好发
+\end{itemize}
+% \datedaward{\small{这是一个比较长长长长的奖}}{比较长的奖的比赛}{2016年04月}
 \medskip
 
 % ----------------------------------------------------------------------------- %
 
-\section{项目经历}
+\section{主要项目}
 
-
-% ---
-\datedproject{分布式流体计算项目}{竞赛项目}{2016年05月 -- 2016年06月}
-\textit{性能优化、并行计算}
+\datedproject{表情锅}{上架应用}{2018年5月 -- 至今}
+\textit{Android、Kotlin、FFmpeg}
 \vspace{0.4ex}
 
-将一个单机的流体计算程序移植到多机平台
+一款支持本地导入/生成模板填入文字生成带字幕Gif表情包的应用。绿色应用公约成员，下载量10w+、DAU1000+。
+
 \begin{itemize}
-  \item 计算节点内部使用OpenMP并行化
-  \item 计算节点间使用MPI并行化
-  \item 单机优化性能达2x, 多机接近线性加速比
+  \item ffmpeg库的交叉编译
+  \item 负责模板数据结构序列化/反序列化/解析/生成等核心流程
+  \item 实现了模板自定义使用的复杂环形自定义View
+  \item Google Play: \href{https://play.google.com/store/apps/details?id=com.uniquestudio.android.iemoji}{\uline{play.google.com/store/apps/details?id=com.uniquestudio.android.iemoji}}
 \end{itemize}
 
 % ---
-\datedproject{这是一个测试项目}{导师项目}{2016年02月 -- 2016年04月}
-\textit{编译技术、C++}
+
+\datedproject{摩卡相机}{上架应用}{2017年11月 -- 2017年12月}
+\textit{Android、Kotlin、持续集成}
 \vspace{0.4ex}
 
-这是一个没有分点陈述的项目，如果没有分点陈述，LaTeX的排版会是什么样子？
-这是一个没有分点陈述的项目，如果没有分点陈述，LaTeX的排版会是什么样子？
-这是一个没有分点陈述的项目，如果没有分点陈述，LaTeX的排版会是什么样子？
-这是一个没有分点陈述的项目，如果没有分点陈述，LaTeX的排版会是什么样子？
+一款一方拍摄照片、留出空白再生成分享码，另一方使用分享码下载图片并使用相机填充空白合成照片的相机应用。
 
-% ---
-\datedproject{C-Compiler}{个人项目}{2016年02月 -- 2016年04月}
-\textit{编译技术、C++}
-\vspace{0.4ex}
-
-使用C++实现了一个简单C语言编译器，支持生成到目标代码。
 \begin{itemize}
-  \item 支持C11标准大部分标准
-  \item 实现了类似lex/flex的词法解析器生成工具
-  \item 实现了类似yacc/bison的语法解析器生成工具
-  \item 后端部分采用窥孔优化
+  \item “飞航杯”手机应用设计大赛\hspace{1ex}一等奖
+  \item Github: \href{https://github.com/viseator/MontageCam}{\uline{github.com/viseator/MontageCam}}
+  \item Google Play: \href{https://play.google.com/store/apps/details?id=com.viseator.montagecam}{\uline{play.google.com/store/apps/details?id=com.viseator.montagecam}}
 \end{itemize}
-
 
 % ----------------------------------------------------------------------------- %
 
-\section{课外}
-\dateditem{\textbf{华中科技大学XX团队}}{2016年06月 -- 至今}
+\section{课外团队}
+\dateditem{\textbf{华中科技大学联创团队}\small{(\href{https://www.hustunique.com/}{\uline{hustunique.com}})\hspace{1ex}\textbf{Android组\hspace{1ex}组长}}}{2016年10月 -- 至今}
 
 \end{document}
 

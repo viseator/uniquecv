@@ -2,6 +2,14 @@
 
 一个使用LaTex编写的简历模板，尽量使用了一些简单的LaTex语句，方便使用者改写。
 
+forked from [dyinnz/uniquecv](https://github.com/dyinnz/uniquecv)
+
+### 我的改动
+
++ 增加了下划线链接支持
++ 调整了版面样式以容纳更多内容
++ 增加更适合英文简历排版的unqiuecv_en
+
 ### 依赖
 
 + 使用XeLatex编译
@@ -32,5 +40,5 @@
 + \hspace{1.0em} \vspace{1.0ex} 插入水平/垂直空白
 + \textbf 加粗 \textit 斜体/楷体
 
-### 示例
-![image](https://github.com/dyinnz/uniquecv/blob/master/example.jpg)
+### 提示
+不同平台下的latex渲染效果可能不同，mac可能会出现ctex使用字体不正常的情况，需要修改ctex安装目录下的字体设置。
